@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300" rel="stylesheet">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset = "utf-8">
+	<title>Zhifan home page</title>
+</head>
+<body>
+	<a id="menu" class="header__menu">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+		</svg>
+	</a>
+	<div class="container">
+		<header class="row">
+			<div class="col-xs-4 logo" id = "header">
+				<img src="images/udacity.logo.jpeg" class="img-responsive" alt="Logo of Udacity.">
+			</div>
+			<div class ="col-xs-8 text-right text-uppercase">
+				<h1 class="name">Zhifan Sang</h1>
+				<span class="subname">Future Traveling Photographer </span>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+			</div>
+		</div>
+		<nav id="drawer" class="nav col-md-12">
+			<p class="col-xs-12 text-center about"><a href="https://www.linkedin.com/in/zhifansang"> About me</a></p>
+		</nav>
+
+		<div class="row">
+			<div class="col-md-12">
+				<img class = "img-responsive background_pic" src="images/placeimg_1000_350_people.jpg" alt="people background image!">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 feature">
+				<b>Featured Work</b>
+			</div>
+		</div>
+
+		<section class="row text-center">
+			<div class="col-md-4">
+				<img class="img-responsive images" src="images/placeimg_300_200_any1.jpg" alt="First image of building." data-toggle="modal" data-target="#link1">
+				<p class="subname">Night</p>
+				<a href="https://github.com/kaiyusung/buildings">https://github.com/zfsang/night</a>
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive images" src="images/placeimg_300_200_any2.jpg" alt="Second image of scenery." data-toggle="modal" data-target="#link2">
+				<p class="subname">Architecture</p>
+				<a href="https://github.com/kaiyusung/scenery">https://github.com/zfsang/architecture</a>
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive images" src="images/placeimg_300_200_any3.jpg" alt="Third image of food." data-toggle="modal" data-target="#link3">
+				<p class="subname food">Scenery</p>
+				<a href="https://github.com/kaiyusung/food">https://github.com/zfsang/scenery</a>
+			</div>
+		</section>
+	</div>
+
+    <!-- Modal content 1-->
+	<div class="modal fade" id="link1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h4 class="modal-title about" id="myModalLabel1">Buildings</h4>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" src="images/placeimg_300_200_any1.jpg" alt="First image of building.">
+					<p class="text-modal">This is just a modal test for my first project in the front end developer course.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Model 2-->
+	<div class="modal fade" id="link2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h4 class="modal-title about" id="myModalLabel2">Scenery</h4>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" src="images/placeimg_300_200_any2.jpg" alt="Second image of scenery.">
+					<p class="text-modal">This is just a modal test for my first project in the front end developer course.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--modal3-->
+	<div class="modal fade" id="link3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h4 class="modal-title about" id="myModalLabel3">Food</h4>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" src="images/placeimg_300_200_any3.jpg" alt="Third image of food.">
+					<p class="text-modal">This is just a modal test for my first project in the front end developer course.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	/*
+	* Open the drawer when the menu icon is clicked.
+	*/
+		var menu = document.querySelector('#menu');
+		var drawer = document.querySelector('.nav');
+
+		menu.addEventListener('click', function(e) {
+			drawer.classList.toggle('open');
+			e.stopPropagation()
+		});
+	</script>
+
+</body>
+</html>

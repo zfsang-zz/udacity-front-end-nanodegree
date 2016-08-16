@@ -1,0 +1,132 @@
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    margin: 10px;
+    padding:10px
+}
+ul {
+    top:10px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+
+li {
+    cursor: pointer;
+    cursor: hand;
+    padding-left: 0;
+    margin: 0
+}
+
+li p {
+    text-align: center;
+    padding: 2px;
+    margin: 0
+}
+h3 {
+
+    text-align: center
+}
+
+
+
+p.name {
+    font-size: 14px;
+    font-weight: bold
+}
+
+li:hover {
+    background-color: #AEA9B5
+}
+
+#map-canvas {
+    height: 100%
+}
+
+#filter {
+
+    margin: 10px;
+    width: 83%;
+    height: 35px;
+    font-size: 17px;
+    text-align: center;
+    padding-left: 10px
+}
+#sidebar {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0;
+    overflow: auto;
+    width: 35%;
+    height: 75%;
+    padding-top: 50px;
+}
+
+.my-picture{
+    width: 100%;
+        max-height: 50px;
+        max-width: 900px;
+: 20%
+
+}
+
+h3{
+       position: absolute; 
+   top: 5px; 
+   left: 0; 
+   width: 100%; 
+}
+h3 span { 
+   color: white; 
+   font: bold 20px/35px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding:3px;
+ 
+}
+
+#images img {
+    width: 32%;
+    margin: 3px
+}
+
+div.modal-container {
+    position: absolute;
+    top: 30px;
+    left: 20px
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    text-align: 15px;
+    left: 35px
+}
+#toggle-button {
+    display: block;
+        position: absolute;
+    top: 32px;
+    right: 2px;
+    z-index: 2;
+}
+
+div {
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    #sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=0.99">
+      <title> Udacity Neighborhood Map Project</title>
+      <link href="css/style.css" rel="stylesheet" >
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <style type='text/css'>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+   </style>
+   </head>
+   <body>
+   <section id="doctor">
+      <div class="doctor-info">
+         <img class="my-picture" src="images/doctor.png" alt="This is a picture of doctor">
+      </div>
+   </section>
+      <div id="map-canvas" ></div>
+      <!-- Page Content -->
+      <div id="sidebar">
+<!--       <p class="button" onclick="toggle_visibility('hideMe')">Show/hide</p>
+ -->      
+
+ <input id="filter" placeholder="Filter Locations"  type="text" data-bind="textInput: filter"/>
+        <div data-bind="visible: true">
+          <!-- <h3 id=title> <span>Find A Doctor Near Emory</span></h3> -->
+
+         <ul data-bind="foreach: visiblePlaces" >
+            <li data-bind="click: $parent.clickMarkerLocation">
+               <p class="name"><span data-bind="text: name"></span></p>
+            </li>
+         </ul>
+         </div>
+      </div>
+         <div id="toggle-button">
+      <img id="eye-button" src="images/magnifer.png" alt="eye button">
+   </div>
+      <!-- call google map api here -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6RtWqUNMQvRwPFyVlwH_WsGvTyHzm5NI&libraries=places&callback=initMap" async defer onerror="gmerror()" ></script>
+      <script src="js/lib/knockout-3.2.0.js"></script>
+      <script src="js/lib/jquery.min.js"></script>
+      <script src="js/lib/bootstrap.min.js"></script>
+      <script src="js/app.js"></script>
+   </body>
+</html>
